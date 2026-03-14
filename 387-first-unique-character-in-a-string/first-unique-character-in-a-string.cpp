@@ -1,6 +1,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
+        unordered_map<char,int>S;
         int freq[26]={0};
         for(char c:s){
         freq[c - 'a']++;
